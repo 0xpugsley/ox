@@ -1,2 +1,4 @@
 (library
- (name ox))
+ (name ox)
+ (preprocess
+  (pps ppx_deriving.show)))

@@ -1,8 +1,20 @@
 (executable
  (public_name ox)
  (name main)
- (libraries ox cohttp-eio eio_main eio.unix fmt unix logs.fmt logs.threaded dotenv))
+ (libraries
+  ox
+  cohttp-eio
+  eio_main
+  eio.unix
+  fmt
+  unix
+  logs.fmt
+  logs.threaded
+  dotenv))
+
 (env
  (dev
   (flags
    (:standard -w -26))))
+
+; remove that, it is to ingnre unsed variables errors
